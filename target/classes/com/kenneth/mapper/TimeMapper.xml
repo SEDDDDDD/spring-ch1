@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xml 파일의 작성자와 이파일의 사용자가 이해할수 있는 규칙을 기록한 문서 -->
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<!-- 	id속성은 인터페이스에 선언된 메서드의 이름과 동일 -->
+	<!-- resultType은 인터페이스에 선언된 메서드의 리턴 타입과 동일 -->
+<mapper namespace="com.kenneth.mapper.TimeMapper">
+	<select id="getTime2" resultType="string">
+		select sysdate from dual
+	</select>
+</mapper>
